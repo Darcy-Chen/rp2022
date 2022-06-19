@@ -7,6 +7,7 @@ Sputnik is a library of sparse linear algebra kernels and utilities for deep lea
 The test and benchmark suites additionally depend on [abseil/abseil-cpp](https://github.com/abseil/abseil-cpp), [google/googltest](https://github.com/google/googletest), and [google/benchmark](https://github.com/google/benchmark). These dependencies are includes as submodules in [third_party](https://github.com/google-research/sputnik/tree/os-build/third_party). To build the test suite and/or benchmark suite, set `-DBUILD_TEST=ON` and/or `-DBUILD_BENCHMARK=ON` in your `cmake` command.
 To install the third party libraries: 
 ```
+cd sputnik
 cd third_party
 rm -rf abseil-cpp
 git clone https://github.com/abseil/abseil-cpp.git
@@ -38,7 +39,7 @@ To launch the container with the sputnik source mounted under `/mount` (assuming
 `sudo docker run --runtime=nvidia -v ~/:/mount/ -it sputnik-dev:latest`
 
 ## Usage
-- To benchmark the spmm, run `spmm_benchmark.sh`, you can change the shape and sparsity of the matrix in '/spmm/spmm_benchmark.cu.cc', similar for other calculations.
+- To benchmark the spmm, run `./spmm_benchmark`, you can change the shape and sparsity of the matrix in '/spmm/spmm_benchmark.cu.cc', similar for other calculations.
 - To export the matrices used for the benchmarking to csv files, add the following code to line 432 in 'matrix.utils.cu.cc', include <iostream> and include <fstream>
 ```
       std::ofstream myfile;
