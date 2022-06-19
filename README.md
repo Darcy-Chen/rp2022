@@ -1,6 +1,6 @@
 # rp2022
 
-This repository contains the code used in the research project for the Bachelor 
+This repository contains the code used in the research project 2022 for the Bachelor 
 Computer Science and Engineering of Delft University of Technology. The project 
 involves benchmarking of several sparse CNN accelerators, the original code 
 can be found in the following repositories: 
