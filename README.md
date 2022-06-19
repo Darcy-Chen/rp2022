@@ -7,7 +7,7 @@ can be found in the following repositories:
 
 * https://github.com/google-research/sputnik
 * https://github.com/marsupialtail/gpu-sparsert
-* https://github.com/Darcy-Chen/Accelerating
+* https://github.com/milk2we/conv_pool_algorithm
 * https://github.com/NVIDIA/MinkowskiEngine
 
 ## Experiment Environment
